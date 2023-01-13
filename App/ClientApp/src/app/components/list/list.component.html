@@ -1,0 +1,6 @@
+<!-- <p>list works!</p> -->
+
+<mat-list>
+    <mat-list-item *ngFor="let item of listItems; index as i" (click)="deleteItem(item)">{{item}}</mat-list-item>
+    <button mat-button color="primary" (click)="back()">Add</button>
+</mat-list>
